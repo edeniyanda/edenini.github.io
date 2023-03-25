@@ -1,0 +1,183 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.touch1 {
+    color:yellow;
+    font-weight: lighter;
+    transition: 0.7;
+}
+
+.touch1:hover {
+    cursor: pointer;
+    color: white;
+    transition: 0.7;
+    
+}
+
+.prime1 {
+    font-size: larger;
+    font-weight: bolder;
+    font-stretch: narrower;
+    transition: 1s;
+
+}
+.prime1:hover {
+    color: yellow;
+    transition: 1s;
+    
+}
+
+.touch {
+    color:yellow;
+    font-weight: lighter;
+}
+
+
+
+.prime {
+    font-size: larger;
+    font-weight: bolder;
+    font-stretch: narrower;
+
+}
+
+
+.firstpage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/mybg.jpg");
+    background-size: cover;
+    background-position: top;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5))
+}
+
+.navlinks ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 50px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    
+
+}
+
+.navlinks ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition : .5s;
+}
+
+.navlinks ul li:hover::after {
+    width: 100%;
+}
+
+.fcont {
+    /* background-color: green; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* padding-bottom: 200px; */
+}
+.cont {
+    align-items: center;
+    /* background-color: aqua; */
+    text-align: center;
+} 
+
+.cont h1 {
+    margin-bottom: 10px;
+    font-size: 8vmin;
+    font-weight: normal;
+}
+
+.cont h3 {
+    font-weight: lighter;
+}
+
+.input {
+    font-size: large;
+    font-family: 'Courier Prime', monospace;
+    margin-bottom: 0px;
+    color: yellow;
+}
+
+.links {
+    margin-top: 20px;
+    
+}
+
+button {
+    /* color: white; */
+    border: 1px solid yellow;
+    padding: 1.5vmin;
+    margin: 20px 10px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: thin;
+    position: relative;
+    overflow: hidden;
+}
+
+button p {
+}
+
+.btnani {
+    background: yellow;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover .btnani{
+    width: 100%;
+    
+}
+button:hover {
+    border: none;
+    color: white;
+}
+.code {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(46, 43, 43);
+    padding-right: 40px;
+}
+
+@media only screen and (max-width:700px) {
+    
+}
+    
