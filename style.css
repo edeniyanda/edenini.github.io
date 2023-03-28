@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .touch1 {
     color:yellow;
     font-weight: lighter;
@@ -136,7 +140,7 @@ body {
     
 }
 
-button {
+.links a {
     /* color: white; */
     border: 1px solid yellow;
     padding: 1.5vmin;
@@ -146,10 +150,9 @@ button {
     font-weight: thin;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 
-button p {
-}
 
 .btnani {
     background: yellow;
@@ -162,11 +165,11 @@ button p {
     transition: 0.5s;
 }
 
-button:hover .btnani{
+.links a:hover .btnani{
     width: 100%;
     
 }
-button:hover {
+.links a:hover {
     border: none;
     color: white;
 }
