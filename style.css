@@ -121,18 +121,18 @@ html {
 } 
 
 .cont h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 8vmin;
     font-weight: normal;
 }
 
 .cont h3 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     font-weight: lighter;
 }
 
 .input {
-    font-size: 35px;
+    font-size: 5vmin;
     font-family: 'Courier Prime', monospace;
     margin-bottom: 10px;
     color: yellow;
