@@ -149,6 +149,7 @@ html {
     border: 1px solid yellow;
     padding: 1.5vmin;
     margin: 20px 10px;
+    margin-left: 0px;
     background: transparent;
     cursor: pointer;
     font-weight: thin;
