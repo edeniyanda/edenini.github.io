@@ -71,7 +71,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5))
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 }
 
 .navlinks ul{
@@ -97,6 +97,7 @@ html {
     transition : .5s;
 }
 
+
 .navlinks ul li:hover::after {
     width: 100%;
 }
@@ -107,7 +108,8 @@ html {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    padding-top: 0px;
     padding-left: 40px;
     padding-right: 40px;
     /* padding-bottom: 200px; */
@@ -115,21 +117,22 @@ html {
 .cont {
     align-items: center;
     /* background-color: aqua; */
-    text-align: center;
+    /* text-align: center; */
 } 
 
 .cont h1 {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     font-size: 8vmin;
     font-weight: normal;
 }
 
 .cont h3 {
+    padding-bottom: 15px;
     font-weight: lighter;
 }
 
 .input {
-    font-size: largerj;
+    font-size: 35px;
     font-family: 'Courier Prime', monospace;
     margin-bottom: 0px;
     color: yellow;
@@ -155,22 +158,35 @@ html {
 
 
 .btnani {
-    background: yellow;
     width: 0;
     height: 100%;
+    background: rgb(135, 135, 3);
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
-    z-index: -1;
     transition: 0.5s;
+    /* z-index: 0; */
+
 }
 
+ .cn {
+    background: transparent;
+}
+
+
+
 .links a:hover .btnani{
-    width: 100%;
+    z-index: -1;
+    transition: 0.5s;
+    width: 100%;  
     
 }
 .links a:hover {
-    border: none;
+    z-index: 0;
+}
+
+.links a:hover {
+    /* border: none; */
     color: white;
 }
 .code {
@@ -181,6 +197,27 @@ html {
 }
 
 @media only screen and (max-width:700px) {
-    
+    .navlinks ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding-top: 100px;
+        background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+    }
+    .navlinks ul li::after{
+        padding-top: 0px;
+    }
+
+    .navlinks ul hr {
+        padding-top: 0;
+    }
+    .navlinks ul li {
+        padding-top: 0px;
+        padding-left: 20px;
+    }
 }
     
