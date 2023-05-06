@@ -196,7 +196,7 @@ html {
     padding-right: 40px;
 }
 
-@media only screen and (max-width:700px) {
+@media(max-width: 768px) {
     .navlinks ul{
         display: flex;
         flex-direction: column;
